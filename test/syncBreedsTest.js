@@ -16,5 +16,13 @@ describe('#breedDetails', () => {
     assert.equal(expectedDesc, balinese);
   });
 
+
+  it('returns undefined for the Tiger breed', () => {
+    const expectedDesc = undefined;
+
+    const tiger = breedDetails('Tiger');
+    assert.equal(expectedDesc, tiger);
+  });
+
 });
 
